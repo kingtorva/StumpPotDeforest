@@ -1,0 +1,467 @@
+<html>
+
+<head>
+    <title>BellJohnathanDeforestation</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #preloader {
+            position: fixed;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #99f0fc;
+            z-index: 200;
+        }
+
+        #loading {
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            color: aliceblue;
+            margin: auto;
+            position: relative;
+            top: 50%;
+            transform: traslateY(-50%);
+        }
+
+        /*font*/
+        p {
+            font-size: 1em;
+            font-family: arial;
+            font-weight: bold;
+            position: absolute;
+            text-align: center center;
+            color: #000000;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.54);
+        }
+
+        /*preloader font*/
+        P2 {
+            font-size: 1em;
+            font-family: arial;
+            left: 50;
+            font-weight: bold;
+            position: absolute;
+            text-align: center center;
+            color: #ffffff;
+        }
+
+        /*text box*/
+        #infobox {
+            position: center center absolute;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        #infoText {
+            position: absolute;
+            margin-bottom: 20%;
+            top: 20%;
+            right: 25%;
+            text-align: center center;
+            width: 90%;
+        }
+
+        /*logos*/
+        #header {
+            position: absolute;
+            margin-left: -12%;
+            width: 25%;
+            z-index: 100;
+        }
+
+        #badge {
+            position: absolute;
+            margin-top: 8px;
+            margin-right: 50%;
+            width: 80%;
+            max-width: 640px;
+        }
+
+
+        #inner {
+            position: absolute;
+            bottom: 30px;
+            z-index: 100;
+            width: 100%;
+        }
+
+
+        /*        slider*/
+        input[type=range].slide {
+            -webkit-appearance: none;
+            background-color: #409128;
+            height: 10px;
+            width: 60%;
+            border-radius: 3px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: #61e639;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+<!-- img-->
+<div id="header">
+
+    <img src="img/StumpPotLogo2.png" id="badge" onclick="window.open('https://350.org/science/')">
+
+</div>
+
+<body>
+    <!--    preloader-->
+    <container id="preloader">
+
+        <div id="loading">
+            <p2>Please Wait</p2>
+        </div>
+        <img src="img/preloader.gif">
+    </container>
+
+
+    <div id="inner">
+        <!--slider-->
+        <input class="slide" type="range" min="0" max="6" step="1" value="0" oninput="showVal(this.value)">
+
+    </div>
+
+    <!--Text-->
+    <!--    text1-->
+
+    <div id="infobox">
+
+        <div id=infoText>
+            <div class="background">
+                <p id="Text1" style="display:none"> The environmental community of the Province of Negros Oriental is outraged by the puppetry of DENR-EMB from the National office who arrived this morning supposedly to conduct a site investigation regarding the alleged expansion activities at the Mount Talinis Range by the Energy Development Corporation- Southern Negros<br><br> Geothermal Project (EDC-SNGP).Representatives from DENR-EMB deliberately snubbed the waiting parties and directly went to the EDC's proposed expansion site instead.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!--    text2-->
+    <div id="infobox">
+        <div id=infoText>
+            <p id="Text2" style="display:none"> 350 Pilipinas Coordinator Zephanie Repollo said, 'They have breached our agreement to meet first so we could provide them with data as well as the coordinates regarding the alleged on-going activities.' Present were individuals representing different groups; 350 Pilipinas, 350 Negros, Save Mount Talinis Movement, Fardec Inc., who were also the complainants during the Dialogue at the DENR National office last April. Religious organizations also sent representatives to observe including Fr Hendrix Alar as representative <br>of Bishop Julito Cortes.
+
+            </p>
+        </div>
+    </div>
+    <!--    text3-->
+    <div id="infobox">
+        <div id=infoText>
+            <p id="Text3" style="display:none">'We have waited for almost three hours for nothing. They have insulted our sincere concern for our Mt Talinis, and worst they have once again tainted the prestige of DENR as an agency that was suppose to protect our environment', shared the disappointed Gary Rosales of Kinaiyahan Inc.<br><br>Save Mt. Talinis and One-MC Coordinator Aidalyn Arabe exposed, 'They had the guts to ignore us despite our compliance to their requests: 1. No media exposure, 2. Refusal to meet at neutral grounds such as DENR office and Silliman University Facility, 3. No protests/rallies, 4. Pre-submission of names of those who will attend the validation process and 5. The signing of waivers by the EDC to all who will enter their premises.'
+
+            </p>
+        </div>
+    </div>
+    <!--    text4-->
+    <div id="infobox">
+        <div id=infoText>
+            <p id="Text4" style="display:none"> DENR-EMB's site validation is a critical stage for the environmental groups since signs of an on-going expansion activities has been sited in the proposed area. DENR initially stated during the earlier April dialogue that if expansion activities have been conducted prior to the granting of permit, the EDC's request for ECC will be automatically denied.<br><br>Expansion activities in the absence of an ECC (Environmental Compliance Certificate) is a violation under the EIS System, however, discovered clearing sites, installed instruments, and markings at the Mt. Talinis Range is now in question.
+
+            </p>
+        </div>
+    </div>
+    <!--    text5-->
+    <div id="infobox">
+        <div id=infoText>
+            <p id="Text5" style="display:none"> 'The destruction right before our own eyes is not permissible by any ECC or permits. At whatever level of EDC's operation that brought our trees down must already be stopped. We do not believe that we have to sacrifice our natural forest for geothermal energy when we know for a fact that it is not the only source of renewable energy in the Province,' Zeph Repollo, Coordinator of 350 Pilipinas, a national grassroots climate action network said.<br><br> 'Our forests do not only serve as natural carbon sink and watershed but it also strengthens our resilience amidst the worsening climate crisis. There is no replacement for these forests, not even cutting them for EDC's geothermal expansion,' Repollo added.
+
+            </p>
+        </div>
+    </div>
+    <!--    text6-->
+    <div id="infobox">
+        <div id=infoText>
+            <p id="Text6" style="display:none"> 'I appeal to our leaders in Government, especially to Valencia Mayor Edgar Teves, not to turn a blind eye to this impending loss. This is home to critically endangered flora and fauna, water source to 16 towns and cities, and hundreds of families-your constituents- will be displaced. You are mandated by law to safeguard our people and the environment as our life and the future of our children depends on it,' Repollo finished.<br><br> Let us continue to raise our collective voices to protect our last natural forest in Negros Oriental. The destruction we are already seeing is only a glimpse of what it will look like if operations continue.<br><br>Click Logo for more info!
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="js/three.min.js"></script>
+    <script src="js/Detector.js"></script>
+    <script src="js/ColladaLoader.js"></script>
+    <script src="js/tween.min.js"></script>
+
+
+    <script>
+        var scene, camera, renderer,
+            lastVal = 0,
+            itemsToLoad = 1,
+            loaded = 0;
+
+        //preloader
+        function checkload() {
+            loaded++;
+            if (loaded == itemsToLoad) {
+                render();
+                document.getElementById("preloader").style.visibility = 'hidden';
+            }
+        }
+
+        // House vars 1-7
+        var houseVal = 1;
+        var house1X = houseVal,
+            house2Y = houseVal,
+            house3Z = houseVal;
+        var house2X = houseVal,
+            house2Y = houseVal,
+            house2Z = houseVal;
+        var house3X = houseVal,
+            house3Y = houseVal,
+            house3Z = houseVal;
+        var house4X = houseVal,
+            house4Y = houseVal,
+            house4Z = houseVal;
+        var house5X = houseVal,
+            house5Y = houseVal,
+            house5Z = houseVal;
+        var house6X = houseVal,
+            house6Y = houseVal,
+            house6Z = houseVal;
+        var house7X = houseVal,
+            house7Y = houseVal,
+            house7Z = houseVal;
+        var house1, house2, house3, house4, house5, house6, house7;
+
+
+
+        //end of house Vars
+        var mouse = new THREE.Vector2(),
+            INTERSECTED;
+
+        function init() {
+            //add detector to see if WebGL is supported
+            if (!Detector.webgl) Detector.addGetWebGLMessage();
+            //set up a scene
+            scene = new THREE.Scene();
+            //add a camera
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            //render the scene - start renderer and set it's size
+            renderer = new THREE.WebGLRenderer({
+                antialias: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setClearColor(0x99f0fc, 1);
+            renderer.shadowMap.enabled = true;
+            renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+            //add to webpage
+            document.body.appendChild(renderer.domElement);
+
+            var light = new THREE.DirectionalLight(0xffffff, 0.5);
+            light.position.set(1, 1, 1).normalize();
+            scene.add(light);
+
+            var loader = new THREE.ColladaLoader();
+            loader.options.convertUpAxis = true;
+            loader.load('islands.dae', function(collada) {
+
+                var dae = collada.scene;
+
+                dae.traverse(function(child) {
+
+                    if (child instanceof THREE.Mesh) {
+                        child.castShadow = true;
+                        child.receiveShadow = true;
+                    }
+
+                });
+
+                dae.scale.x = dae.scale.y = dae.scale.z = 0.5;
+                dae.updateMatrix();
+                scene.add(dae);
+
+                //turning houses visbilty off at the start
+                house1 = scene.getObjectByName("house1", true);
+                house2 = scene.getObjectByName("house2", true);
+                house3 = scene.getObjectByName("house3", true);
+                house4 = scene.getObjectByName("house4", true);
+                house5 = scene.getObjectByName("house5", true);
+                house6 = scene.getObjectByName("house6", true);
+                house7 = scene.getObjectByName("house7", true);
+                house1.scale.y = 0.001;
+                house2.scale.y = 0.001;
+                house3.scale.y = 0.001;
+                house4.scale.y = 0.001;
+                house5.scale.y = 0.001;
+                house6.scale.y = 0.001;
+
+
+
+
+                // lighting
+                var light = scene.getObjectByName("Light", true);
+                light = light.children[0];
+                light.castShadow = true;
+                light.distance = 1000;
+                light.penumbra = 1;
+
+                checkload();
+
+            });
+
+            //position camera
+            camera.position.set(450, 150, 450);
+
+            //render the scene
+            //render();
+        }
+
+        function render() {
+            //call to render scene 60fps
+            requestAnimationFrame(render);
+
+            //speed
+            var timer = Date.now() * 0.0001;
+
+            //            distance
+            camera.position.x = Math.cos(timer) * 450;
+            camera.position.z = Math.sin(timer) * 450;
+            camera.lookAt(scene.position);
+
+            TWEEN.update();
+
+            //keep displaying scene
+            renderer.render(scene, camera);
+        }
+
+
+
+        function showVal(val) {
+
+
+            if (val != lastVal) {
+
+                if (val > lastVal) {
+                    //                    get tree shrink them
+                    var trees = scene.getObjectByName("twee" + val, true);
+                    new TWEEN.Tween(trees.scale).to({
+
+                        y: 0.0001
+
+                    }, 1000).easing(TWEEN.Easing.Elastic.InOut).start();
+                    //get houses make them rise
+                    var home = scene.getObjectByName("house" + val, true);
+
+                    new TWEEN.Tween(home.scale).to({
+
+                        y: 1
+
+                    }, 1000).easing(TWEEN.Easing.Elastic.InOut).start();
+
+
+                } else {
+                    //                    get tree rise them
+                    var trees = scene.getObjectByName("twee" + lastVal, true);
+                    new TWEEN.Tween(trees.scale).to({
+
+                        y: 1
+
+                    }, 1000).easing(TWEEN.Easing.Elastic.InOut).start();
+                    //get houses make them shrink
+                    var home = scene.getObjectByName("house" + lastVal, true);
+                    new TWEEN.Tween(home.scale).to({
+
+                        y: 0.0001
+
+                    }, 1000).easing(TWEEN.Easing.Elastic.InOut).start();
+
+
+                }
+
+            }
+            //text apears
+            if (val != lastVal) {
+
+                if (val == 1) {
+                    document.getElementById("Text1").style.display = "inline";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "none";
+                } else if (val == 2) {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "inline";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "none";
+                } else if (val == 3) {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "inline";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "none";
+                } else if (val == 4) {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "inline";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "none";
+                } else if (val == 5) {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "inline";
+                    document.getElementById("Text6").style.display = "none";
+                } else if (val == 6) {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "inline";
+                } else {
+                    document.getElementById("Text1").style.display = "none";
+                    document.getElementById("Text2").style.display = "none";
+                    document.getElementById("Text3").style.display = "none";
+                    document.getElementById("Text4").style.display = "none";
+                    document.getElementById("Text5").style.display = "none";
+                    document.getElementById("Text6").style.display = "none";
+                }
+                lastVal = val;
+            }
+
+        }
+        //call the init function to run the code
+        init();
+
+    </script>
+</body>
+
+</html>
+
+
+
+<!--
+Special thanks to:
+Mark shufflebottem
+Steve Hudak
+Savannah Delgoto
+Sahar Rana
+Cherry Lucus 
+Lucus Miranda                    
+-->
